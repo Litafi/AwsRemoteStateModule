@@ -23,8 +23,8 @@ variable "bucket_acl_value" {
   description = "make s3 bucket private or public. Default is private"
 }
 
-variable "bucket_principal" {
-  type        = string
+variable "bucket_principals" {
+  type        = list(string)
   description = "principal allowed access to terraform backend bucket"
 }
 
